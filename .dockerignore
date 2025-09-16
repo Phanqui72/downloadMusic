@@ -1,0 +1,13 @@
+# Bỏ qua các thư mục do IDE và Maven tạo ra
+.idea/
+.mvn/
+target/
+.smarttomcat/
+
+# Bỏ qua các file cấu hình và log cục bộ
+*.log
+.env
+
+# Bỏ qua thư mục Git
+.git
+.gitignore
