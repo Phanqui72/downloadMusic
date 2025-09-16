@@ -23,27 +23,16 @@
         </th>
         <td>
             <tr>
-                <td>Về đâu mái tóc người thương</td>
+                <td>Phép màu</td>
                 <td>
-                    <a href="/musicStore/sound/${productCode}/star.mp3">MP3</a>
+                    <a href="${pageContext.request.contextPath}/sound/bolero/phepmau.mp3">MP3</a>
                 </td>
             </tr>
+
             <tr>
-                <td>Sầu tím thiệp hồng</td>
+                <td>Nhạc phim mưa đỏ</td>
                 <td>
-                    <a href="/musicStore/sound/${productCode}/no_difference.mp3">MP3</a>
-                </td>
-            </tr>
-            <tr>
-                <td>Con đường xưa em đi</td>
-                <td>
-                     <a href="/musicStore/sound/${productCode}/star.mp3">MP3</a>
-                </td>
-            </tr>
-            <tr>
-                <td>Túp liều lý tưởng</td>
-                <td>
-                      <a href="/musicStore/sound/${productCode}/no_difference.mp3">MP3</a>
+                      <a href="${pageContext.request.contextPath}/sound/bolero/congidephon.mp3">MP3</a>
                 </td>
             </tr>
         </td>
