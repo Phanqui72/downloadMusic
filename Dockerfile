@@ -34,4 +34,5 @@ COPY --from=builder /app/target/download-app.war /usr/local/tomcat/webapps/ROOT.
 # Render sẽ cung cấp một biến môi trường tên là $PORT.
 # Lệnh này sẽ tìm và thay thế cổng mặc định 8080 của Tomcat bằng cổng của Render,
 # sau đó khởi động server.
-CMD ["sh", "-c", "sed -i 's/8080/${PORT}/g' /usr/local/tomcat/conf/server.xml && catalina.sh run"]
+# Dòng này chính xác và an toàn hơn
+CMD ["sh", "-c", "sed -i -e 's/port=\"8080\"/port=\"${PORT}\"/' /usr/local/tomcat/conf/server.xml && catalina.sh run"]
